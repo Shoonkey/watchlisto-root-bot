@@ -1,0 +1,36 @@
+{
+  "name": "@watchlisto-bot/bot",
+  "author": "Shoonkey <shoonkey.dev@gmail.com>",
+  "description": "A bot application for Root that allows for keeping a watchlist with friends",
+  "version": "1.0.0",
+  "private": true,
+  "contributors": [
+    {
+      "name": "Shoonkey",
+      "email": "shoonkey.dev@gmail.com"
+    },
+    {
+      "name": "Shinjoku",
+      "email": "deora.2@hotmail.com"
+    }
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@rootsdk/server-bot": "*",
+    "better-sqlite3": "^12.6.2",
+    "kysely": "^0.28.11"
+  },
+  "devDependencies": {
+    "@rootsdk/dev-tools": "*",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.3.2",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "node clean.js",
+    "bot": "rootsdk start devhost"
+  }
+}

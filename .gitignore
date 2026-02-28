@@ -1,0 +1,10 @@
+# secrets
+.env
+
+# dependencies
+node_modules/
+rootsdk.sqlite3
+
+# build
+dist/
+tsconfig.tsbuildinfo
